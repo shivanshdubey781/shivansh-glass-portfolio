@@ -18,6 +18,15 @@ const Hero = () => {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/04b2606a-e5bd-4d80-a491-df002641f580.png';
+    link.download = 'Shivansh_Dubey_CV.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -170,7 +179,7 @@ const Hero = () => {
             View My Work
           </Button>
           <Button
-            onClick={scrollToContact}
+            onClick={downloadCV}
             variant="outline"
             size="lg"
             className="glass border-primary/30 hover:bg-primary/10 hover:scale-105 transition-all duration-300"
