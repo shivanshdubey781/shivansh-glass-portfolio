@@ -83,17 +83,12 @@ const Hero = () => {
           className="mb-8"
         >
           <div className="w-32 h-32 mx-auto mb-4 glass-card rounded-full overflow-hidden glow-hover">
-            <div className="w-full h-full bg-gradient-primary flex items-center justify-center">
-              <span className="text-2xl font-bold text-white">SD</span>
-            </div>
+            <img 
+              src="/lovable-uploads/8f40a23d-7bad-4e30-a243-cdf1134c79a4.png" 
+              alt="Shivansh Dubey"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-sm text-primary hover:text-primary-glow transition-colors duration-300"
-          >
-            Click to upload profile picture
-          </motion.button>
         </motion.div>
 
         <motion.h1
