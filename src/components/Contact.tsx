@@ -31,8 +31,8 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'default_service', // You'll need to configure this in EmailJS
-        'template_1', // You'll need to create a template
+        'service_c703jb9',
+        'template_acb2lrr',
         {
           from_name: formData.name,
           from_email: formData.email,
